@@ -1,0 +1,5 @@
+print ("*******************")
+print ("*** HOLA MUNDO ***")
+print ("******************")
+print ("Hola Mundo")
+input ()
