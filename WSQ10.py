@@ -4,21 +4,6 @@ def Titulo():																				#Funcion que escribe un titulo al programa
 	print ("**************")
 	print ("*** LISTAS ***")
 	print ("**************")
-#
-def Llenar(Datos):																			#Funcion que llena elementos de la lista
-	Contador=0
-	Salir='S'
-	while (Salir=="s" or Salir=="S"):
-		if (Contador<=1):																		#La lista minimo tiene que tener dos valores. Asignarlos.
-			Datos[Contador]=float(input("Dame el numero: "))
-			Contador=Contador+1
-		if (Contador>=2):																		#Si deceas añadir otros valores, simplemente pulsar "s" o "S"
-			Salir=input("\n\t¿Deceas ingresar mas numeros?. Pulsa \"s\" o \"S\" : ")
-			if (Salir=="s" or Salir=="S"):
-				Datos.append(float(input("Dame el numero: ")))
-	print ("La lista es: ",Datos)
-	return Datos
-#
 def Suma(Datos):																			#Funcion que imprime la suma de la lista de numeros
 	Suma=0
 	Cantidad=len(Datos)																			#Conseguir la cantidad de elementos de la lista
@@ -44,9 +29,10 @@ def DesviacionEstandar(Datos):																#Funcion que imprime la desviacion
 	Desviacion=math.sqrt (Sumatoria)
 	print ("La desviacion estandar de esos elementos es: ",Desviacion)							#Sacar raiz cuandrada de la suma de cuadrados
 #
-Lista=[0]*2																					#Declarar una lista de 2 elementos para comenzar
 Titulo()
-Lista=Llenar(Lista)
+Lista=[0]*10																				#Declarar una lista de 10 elementos
+for a in range(10):																				#Llenarla
+	Lista[a]=float(input("Numero: "))
 Suma(Lista)
 Promedio(Lista)
 DesviacionEstandar(Lista)
