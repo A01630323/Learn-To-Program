@@ -18,6 +18,7 @@ def Factorial(Numero):
 	else:
 		return Numero*Factorial(Numero-1)
 #
+Titulo()
 Q=int(input("Presicion: "))
 print (calculate_e(Q))
 input ()
