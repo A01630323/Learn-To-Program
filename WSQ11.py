@@ -17,6 +17,7 @@ Datos=[]
 Lychrel=[]
 X=int(input("Coloca el numero inferior: "))			#Introducir el rango de valores a analizar
 Y=int(input("Coloca el numero superior: "))
+print ("El rango de los numeros a analizar va de %s a %s" %(X,Y))
 #
 for i in range (Y-X+1):								#Transformar en lista, todos los numeros dentro del rango designado
 	Datos.append(X)
