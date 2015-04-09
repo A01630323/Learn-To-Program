@@ -1,0 +1,15 @@
+def Titulo():
+	print ("*********************************")
+	print ("*** FIBONACCI POR INTERACCION ***")
+	print ("*********************************")
+#
+def fib(n):
+	a, b = 0, 1
+	for i in range(n):
+		a, b = b, a + b
+	return a
+#
+Titulo()
+Numero=int(input("Numero que deceas calcular la sucesión de fibonacci: "))
+print ("El resultado es: ",fib(Numero))
+input ()
